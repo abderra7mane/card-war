@@ -66,6 +66,19 @@
                                     <segue destination="x7k-5O-Nal" kind="show" id="Ymr-kt-Vkm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ei7-SY-ShO">
+                                <rect key="frame" x="364" y="675" width="30" height="28.666666666666629"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IUR-KO-hIY"/>
+                                    <constraint firstAttribute="width" constant="30" id="v3Q-Lt-hQ0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="info.circle" catalog="system"/>
+                                <connections>
+                                    <segue destination="1L0-rS-xbo" kind="show" id="jC3-5F-HOb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -75,9 +88,11 @@
                                 <variation key="heightClass=compact-widthClass=regular" constant="10"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="10"/>
                             </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ei7-SY-ShO" secondAttribute="trailing" constant="20" id="Ct1-zS-ORR"/>
                             <constraint firstItem="Qm0-9Y-uqm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CxI-JO-fb4"/>
                             <constraint firstAttribute="trailing" secondItem="KiZ-mW-Wj6" secondAttribute="trailing" id="EA6-LP-XR7"/>
                             <constraint firstItem="KiZ-mW-Wj6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EB1-me-z99"/>
+                            <constraint firstItem="J3A-IM-SHN" firstAttribute="centerY" secondItem="Ei7-SY-ShO" secondAttribute="centerY" id="Fw2-us-EoW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="J3A-IM-SHN" secondAttribute="bottom" constant="70" id="IZ7-7U-bWg">
                                 <variation key="heightClass=compact-widthClass=compact" constant="10"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="20"/>
@@ -98,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="881" y="115"/>
+            <point key="canvasLocation" x="879.71014492753625" y="114.94565217391305"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="7F4-k3-wui">
@@ -220,7 +235,80 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="maz-m4-MOj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1597" y="115"/>
+            <point key="canvasLocation" x="1751" y="-260"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="N06-Q7-AvL">
+            <objects>
+                <viewController id="1L0-rS-xbo" customClass="AboutViewController" customModule="CardWar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rj1-EH-Nh2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="LzA-vC-SBe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcZ-R8-aTb">
+                                <rect key="frame" x="376.66666666666669" y="20" width="17.333333333333314" height="22"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="xmark" catalog="system"/>
+                                <connections>
+                                    <action selector="closeButtonClicked" destination="1L0-rS-xbo" eventType="touchUpInside" id="hX3-M6-Xjg"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H5D-RQ-wDC">
+                                <rect key="frame" x="268" y="695.66666666666663" width="126" height="20.333333333333371"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@abderra7mane" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5x-W4-qYn">
+                                        <rect key="frame" x="0.0" y="0.0" width="126" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="uqe-Pk-s0u" userLabel="Logo">
+                                <rect key="frame" x="127" y="30" width="160" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uqe-Pk-s0u" secondAttribute="height" multiplier="122:67" id="aqZ-rG-bLi"/>
+                                    <constraint firstAttribute="width" constant="160" id="tHi-Hh-2dQ">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="120"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey. Thanks for downloading the code for this app.   Thumbs up if you built and installed the application 👍" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gq8-0k-bIZ">
+                                <rect key="frame" x="87" y="327" width="240" height="122"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="r8j-9h-WjL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9gI-iu-lgQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9gI-iu-lgQ" firstAttribute="trailing" secondItem="H5D-RQ-wDC" secondAttribute="trailing" constant="20" id="90r-Bg-uVV"/>
+                            <constraint firstAttribute="bottom" secondItem="LzA-vC-SBe" secondAttribute="bottom" id="CBb-OG-prn"/>
+                            <constraint firstItem="LzA-vC-SBe" firstAttribute="top" secondItem="Rj1-EH-Nh2" secondAttribute="top" id="TE6-Dl-iBL"/>
+                            <constraint firstItem="LzA-vC-SBe" firstAttribute="leading" secondItem="Rj1-EH-Nh2" secondAttribute="leading" id="VSP-4h-kMX"/>
+                            <constraint firstItem="9gI-iu-lgQ" firstAttribute="bottom" secondItem="H5D-RQ-wDC" secondAttribute="bottom" constant="20" id="WQW-0q-nFH"/>
+                            <constraint firstItem="gq8-0k-bIZ" firstAttribute="centerY" secondItem="Rj1-EH-Nh2" secondAttribute="centerY" constant="20" id="Wma-1w-xmr"/>
+                            <constraint firstItem="uqe-Pk-s0u" firstAttribute="top" secondItem="9gI-iu-lgQ" secondAttribute="top" constant="30" id="dAJ-dI-hVt"/>
+                            <constraint firstItem="uqe-Pk-s0u" firstAttribute="centerX" secondItem="Rj1-EH-Nh2" secondAttribute="centerX" id="dGa-Y3-DJ7"/>
+                            <constraint firstItem="OcZ-R8-aTb" firstAttribute="top" secondItem="9gI-iu-lgQ" secondAttribute="top" constant="20" id="nNX-q1-F8S"/>
+                            <constraint firstAttribute="trailing" secondItem="LzA-vC-SBe" secondAttribute="trailing" id="oFF-Rz-9X3"/>
+                            <constraint firstItem="9gI-iu-lgQ" firstAttribute="trailing" secondItem="OcZ-R8-aTb" secondAttribute="trailing" constant="20" id="rjW-cQ-RZ2"/>
+                            <constraint firstItem="uqe-Pk-s0u" firstAttribute="width" secondItem="uqe-Pk-s0u" secondAttribute="height" multiplier="122:67" id="w3K-SK-3J3"/>
+                            <constraint firstItem="gq8-0k-bIZ" firstAttribute="centerX" secondItem="Rj1-EH-Nh2" secondAttribute="centerX" id="waX-D7-SAU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mni-Gc-6xG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zMF-BR-tfL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1750.7246376811595" y="451.63043478260875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GDq-cA-tyz">
@@ -248,6 +336,7 @@
         <image name="card10" width="120" height="170"/>
         <image name="card14" width="120" height="170"/>
         <image name="dealbutton" width="81.666664123535156" height="31"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="logo" width="122" height="67"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
