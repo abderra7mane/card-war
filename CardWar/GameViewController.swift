@@ -66,8 +66,8 @@ class GameViewController: UIViewController {
     
     @IBAction func closeButtonClicked() {
         let alert = UIAlertController(title: "Giving up!", message: "You don't feel up to it 😓?", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "I'll do it 👊", style: .default, handler: nil))
-        alert.addAction(UIAlertAction(title: "Not today 🥱", style: .default, handler: { action in
+        alert.addAction(UIAlertAction(title: "I'll do it 👊", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Not today 🥱", style: .destructive, handler: { action in
             self.navigationController?.popViewController(animated: true)
         }))
         self.present(alert, animated: true)

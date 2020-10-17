@@ -43,7 +43,7 @@
                                         <rect key="frame" x="120" y="0.0" width="120" height="170"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.transform.rotation.z">
-                                                <real key="value" value="0.29999999999999999"/>
+                                                <real key="value" value="0.20000000000000001"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
